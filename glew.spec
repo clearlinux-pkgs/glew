@@ -4,7 +4,7 @@
 #
 Name     : glew
 Version  : 1.13.0
-Release  : 1
+Release  : 2
 URL      : http://downloads.sourceforge.net/project/glew/glew/1.13.0/glew-1.13.0.tgz
 Source0  : http://downloads.sourceforge.net/project/glew/glew/1.13.0/glew-1.13.0.tgz
 Summary  : The OpenGL Extension Wrangler library
