@@ -1,8 +1,8 @@
-libGLEW.so.2.0:glewGetErrorString
-libGLEW.so.2.0:glewGetExtension
-libGLEW.so.2.0:glewGetString
-libGLEW.so.2.0:glewInit
-libGLEW.so.2.0:glewIsSupported
-libGLEW.so.2.0:glxewGetExtension
-libGLEW.so.2.0:glxewInit
-libGLEW.so.2.0:glxewIsSupported
+libGLEW.so.1.13:glewGetErrorString
+libGLEW.so.1.13:glewGetExtension
+libGLEW.so.1.13:glewGetString
+libGLEW.so.1.13:glewInit
+libGLEW.so.1.13:glewIsSupported
+libGLEW.so.1.13:glxewGetExtension
+libGLEW.so.1.13:glxewInit
+libGLEW.so.1.13:glxewIsSupported

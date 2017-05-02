@@ -1,5 +1,5 @@
 PKG_NAME := glew
-URL := https://sourceforge.net/projects/glew/files/glew/2.0.0/glew-2.0.0.tgz
-
+URL := http://downloads.sourceforge.net/project/glew/glew/1.13.0/glew-1.13.0.tgz
+ARCHIVES :=
 
 include ../common/Makefile.common
