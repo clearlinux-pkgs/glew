@@ -4,7 +4,7 @@
 #
 Name     : glew
 Version  : 2.0.0
-Release  : 6
+Release  : 7
 URL      : https://github.com/nigels-com/glew/releases/download/glew-2.0.0/glew-2.0.0.tgz
 Source0  : https://github.com/nigels-com/glew/releases/download/glew-2.0.0/glew-2.0.0.tgz
 Summary  : The OpenGL Extension Wrangler library
@@ -45,13 +45,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1500075386
+export SOURCE_DATE_EPOCH=1500401538
 pushd ./
 make V=1  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1500075386
+export SOURCE_DATE_EPOCH=1500401538
 rm -rf %{buildroot}
 pushd ./
 %make_install
