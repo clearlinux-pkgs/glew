@@ -1,0 +1,12 @@
+diff -ru glew-2.0.0_backup/Makefile glew-2.0.0/Makefile
+--- glew-2.0.0_backup/Makefile	2016-07-24 00:43:37.000000000 +0000
++++ glew-2.0.0/Makefile	2017-11-08 22:01:02.335358980 +0000
+@@ -81,7 +81,7 @@
+ OPT = $(POPT)
+ endif
+ INCLUDE = -Iinclude
+-CFLAGS = $(OPT) $(WARN) $(INCLUDE) $(CFLAGS.EXTRA)
++CFLAGS = $(OPT) $(WARN) $(INCLUDE) $(CFLAGS.EXTRA) $(DEFAULTFLAGS)
+ 
+ all debug: glew.lib glew.bin
+ 

@@ -4,7 +4,7 @@
 #
 Name     : glew
 Version  : 2.0.0
-Release  : 7
+Release  : 11
 URL      : https://github.com/nigels-com/glew/releases/download/glew-2.0.0/glew-2.0.0.tgz
 Source0  : https://github.com/nigels-com/glew/releases/download/glew-2.0.0/glew-2.0.0.tgz
 Summary  : The OpenGL Extension Wrangler library
@@ -14,6 +14,7 @@ Requires: glew-lib
 BuildRequires : cmake
 BuildRequires : pkgconfig(gl)
 BuildRequires : pkgconfig(x11)
+Patch1: defaults.patch
 
 %description
 # GLEW - The OpenGL Extension Wrangler Library
@@ -39,19 +40,20 @@ lib components for the glew package.
 
 %prep
 %setup -q -n glew-2.0.0
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1500401538
+export SOURCE_DATE_EPOCH=1510179288
 pushd ./
-make V=1  %{?_smp_mflags}
+make V=1  %{?_smp_mflags} DEFAULTFLAGS="$CFLAGS"
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1500401538
+export SOURCE_DATE_EPOCH=1510179288
 rm -rf %{buildroot}
 pushd ./
 %make_install
