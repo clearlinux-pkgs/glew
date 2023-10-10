@@ -5,7 +5,7 @@
 #
 Name     : glew
 Version  : 2.2.0
-Release  : 27
+Release  : 28
 URL      : https://sourceforge.net/projects/glew/files/glew/2.2.0/glew-2.2.0.tgz
 Source0  : https://sourceforge.net/projects/glew/files/glew/2.2.0/glew-2.2.0.tgz
 Summary  : The OpenGL Extension Wrangler library
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1696973995
+export SOURCE_DATE_EPOCH=1696978366
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -106,7 +106,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1696973995
+export SOURCE_DATE_EPOCH=1696978366
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/glew
 cp %{_builddir}/glew-%{version}/LICENSE.txt %{buildroot}/usr/share/package-licenses/glew/0ca22faedb8ee495473a82c4d91452493b22ac9f || :
